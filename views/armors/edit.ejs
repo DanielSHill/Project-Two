@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Edit Armor</title>
+</head>
+
+<nav class="armorEditHeaderButtons">
+
+    <form action="/home/armor">
+        <input class="headerButton button" type="submit" value="Back">
+    </form>
+
+    <form action="/home">
+        <input class="headerButton button" type="submit" value="Home">
+    </form>
+
+</nav>
+
+<body class="armorEditBody">
+
+    <h1 class="armorEditH1">Edit Armor</h1>
+
+    <form action="/home/armor/<%=armor._id%>?_method=PUT" method="post">
+
+
+        <div class="armorEditTopTwoInput">
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox input" type="text" name="name" placeholder="Armor Name" value="<%=armor.name%>" autocomplete="off" required>
+            </div>
+
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox input" type="text" name="description" placeholder="Description" value="<%=armor.description%>" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="armorEditMiddleTwoInput">
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox input" type="text" name="weight" placeholder="Weight" value="<%=armor.weight%>" autocomplete="off" required>
+            </div>
+
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox input" type="text" name="price" placeholder="Price" value="<%=armor.price%>" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="armorEditBottomTwoInput">
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox input" type="text" name="image" placeholder="Image URL" value="<%=armor.image%>" autocomplete="off">
+            </div>
+
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox input" type="text" name="quanity" placeholder="Quanity" value="<%=armor.quanity%>" autocomplete="off" required>
+            </div>
+        </div>
+
+        <br>
+
+
+        <input class="headerButton button" type="submit" value="Submit Changes">
+
+
+    </form>
+
+
+</body>
+
+</html>

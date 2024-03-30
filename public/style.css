@@ -1,0 +1,848 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.input:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.borderImage:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.image:hover {
+    background-color: rgb(104, 104, 126, .3);
+    border-radius: 15px;
+}
+
+.headerButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    transition: .2s ease-in-out;
+}
+
+.headerButton:hover {
+    box-shadow: 0px 5px 15px rgb(59, 59, 59);
+}
+
+.editButton:hover{
+    box-shadow: 0px 0px 0px 2px rgb(0, 255, 0);
+}
+
+.deleteButton:hover{
+    box-shadow: 0px 0px 0px 2px rgb(255, 0, 0);
+}
+
+.indexEditButton {
+    color: black;
+    padding: 0px 17px;
+    background-color: rgb(0, 255, 0);
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 10px;
+}
+
+.indexDeleteButton {
+    color: black;
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+
+/* Start Page CSS */
+
+
+/*=============================================================================================*/
+
+.startBody {
+    text-align: center;
+    background-image: url("https://i.ytimg.com/vi/E5cHeFeNrgE/maxresdefault.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.startH1 {
+    font-family: 'Inconsolata', monospace;
+    margin-top: 150px;
+    font-size: 60px;
+    color: rgb(104, 104, 126)
+}
+
+.startButton {
+    margin-top: 25%;
+    font-size: 40px;
+    padding: 10px 100px;
+    background-color: rgb(7, 25, 26);
+    color: rgb(104, 104, 126);
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/137/750/520/halo-dark-science-fiction-halo-infinite-video-games-hd-wallpaper-preview.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    transition: .1s ease-in-out;
+}
+
+.startButton:hover {
+    box-shadow: 0px 0px 25px rgb(192, 192, 192);
+}
+
+.startAll {
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Home Page CSS */
+
+
+/*=============================================================================================*/
+
+.homeBody {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    background-image: url("https://content.halocdn.com/media/Default/BlogPost/noblehelmetgraphic-body-71afcdcd9d3f4be4aab75ca236586816.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.homeH1 {
+    font-size: 70px;
+    color: rgb(104, 104, 126)
+}
+
+.homeInputForm {
+    color: red;
+}
+
+.homeButton {
+    padding: 25px 140px;
+    font-size: 20px;
+    margin-top: 100px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    transition: .2s ease-in-out;
+}
+
+.homeButton:hover {
+    box-shadow: 0px 5px 15px rgb(59, 59, 59);
+}
+
+.homeInputDiv {
+    color: blue;
+    padding: 10px;
+}
+
+
+/* =================    ARMOR    ================= */
+
+
+/* Armors Index Page */
+
+
+/*=======================================================================================================================================================*/
+
+.armorIndexName {
+    color: rgb(148, 148, 150);
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.armorsIndexBody {
+    text-align: center;
+    background-image: url("https://content.halocdn.com/media/Default/BlogPost/noblehelmetgraphic-body-71afcdcd9d3f4be4aab75ca236586816.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.armorsIndexBodyDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.armorIndexDelete {
+    color: black;
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.armorIndexH1 {
+    color: rgb(104, 104, 126);
+    font-size: 60px;
+}
+
+
+
+.armorUL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.armorLI {
+    min-width: 400px;
+}
+
+.armorIndexDeleteEdit {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.armorIndexHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.armorIndexImage {
+    max-height: 450px;
+    max-width: 450px;
+    min-height: 450px;
+}
+
+
+/* Armors New Page */
+
+
+/*=======================================================================================================================================================*/
+
+.armorNewBody {
+    background-image: url("https://www.343industries.org/forum/uploads/gallery/album_210/large.gallery_20452_210_128356.jpg.46f369bccba575a21601ef795a36de6e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.armorNewHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.armorNewActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.armorNewH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.armorNewTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.armorNewMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.armorNewBottomTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Armors Show Page */
+
+
+/*=======================================================================================================================================================*/
+
+.armorShowBody {
+    background-image: url("https://i.pinimg.com/originals/1f/4d/01/1f4d01b259ca07e5dca4c9c048a16169.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.armorShowImage {
+    max-height: 500px;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 0px 50px;
+}
+
+.armorImageAndInfo {
+    margin-top: 150px;
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.armorShowTopRightHalf {
+    color: rgb(212, 212, 212);
+}
+
+.armorShowP {
+    inline-size: 300px;
+    overflow-wrap: break-word;
+}
+
+.armorShowRightHalf {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.armorShowLeftHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+
+
+/* Armors Edit Page */
+
+
+/*=======================================================================================================================================================*/
+
+.armorEditBody {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/696/95/694/halo-black-master-chief-video-game-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.armorEditHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.armorEditActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.armorEditH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.armorEditTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.armorEditMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.armorEditBottomTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =================    EQUIPMENT    ================= */
+
+
+/* Equipment Index Page */
+
+
+/*=======================================================================================================================================================*/
+
+.equipmentIndexName {
+    color: rgb(148, 148, 150);
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.equipmentIndexBody {
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/20/67/ff/2067ff18c3b7c88224f682518058d669.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.equipmentIndexList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    width: 450px;
+}
+
+.equipmentIndexDeleteEditButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.equipmentIndexH1 {
+    color: rgb(104, 104, 126);
+    font-size: 60px;
+    text-align: center;
+}
+
+.equipmentUL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.equipmentIndexHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipmentIndexImage {
+    max-height: 350px;
+    max-width: 350px;
+    min-height: 280px;
+    min-width: 280px;
+}
+
+
+/* Equipment New Page */
+
+
+/*=======================================================================================================================================================*/
+
+.equipmentNewBody {
+    background-image: url("https://wallpaperaccess.com/full/3369502.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.equipmentNewHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipmentNewActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.equipmentNewH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.equipmentNewTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.equipmentNewMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.equipmentNewBottomInput {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Equipment Show Page */
+
+
+/*=======================================================================================================================================================*/
+
+.equipmentShowBody {
+    color: rgb(136, 136, 136);
+    background-image: url("https://images.alphacoders.com/539/thumb-1920-53963.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 25px;
+}
+
+.equipmentShowLeftHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.equipmentShowRightHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.equipmentShowContainer {
+    color: rgb(212, 212, 212);
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.equipmentShowHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipmentShowImage {
+    max-height: 500px;
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+
+/* Equipment Edit Page */
+
+
+/*=======================================================================================================================================================*/
+
+.equipmentEditBody {
+    background-image: url("https://i.pinimg.com/originals/22/1b/bb/221bbb81f21919c5d9ecb2d4604c9bdf.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.equipmentEditHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipmentEditActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.equipmentEditH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.equipmentEditTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.equipmentEditMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.equipmentEditBottomInput {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =================    WEAPONS    ================= */
+
+
+/* Weapons Index Page */
+
+
+/*=======================================================================================================================================================*/
+
+.weaponIndexName {
+    color: rgb(104, 104, 126);
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+.weaponIndexBody {
+    text-align: center;
+    background-image: url("https://wallpaperaccess.com/full/3369435.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.weaponIndexH1 {
+    color: rgb(104, 104, 126);
+    font-size: 60px;
+    text-align: center;
+}
+
+.weaponUL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2.5%;
+}
+
+.weaponIndexImage {
+    max-height: 400;
+    max-width: 400;
+}
+
+.weaponIndexList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    max-height: 700px;
+    max-width: 700px;
+}
+
+.weaponIndexDeleteEdit {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weaponIndexDeleteButton {
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.weaponIndexHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Weapons New Page */
+
+
+/*=======================================================================================================================================================*/
+
+.weaponNewBody {
+    background-image: url("https://i.redd.it/5irqbsv51ri41.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.weaponNewHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weaponNewActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.weaponNewH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.weaponNewTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponNewMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponNewBottomTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Weapons Show Page */
+
+
+/*=======================================================================================================================================================*/
+
+
+.weaponShowBody {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(219, 219, 219);
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Free-Halo-Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.weaponShowImage {
+    inline-size: 350px;
+    max-height: 350px;
+    max-width: 350px;
+    padding: 15px;
+}
+
+.weaponImageAndInfo {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 670px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.weaponShowBottomRightHalf {
+    color: rgb(212, 212, 212);
+}
+
+.weaponShowRightHalf {
+    font-size: 20px;
+}
+
+
+/* Weapons Edit Page */
+
+
+/*=======================================================================================================================================================*/
+
+.weaponEditBody {
+    background-image: url("https://www.teahub.io/photos/full/97-972792_wallpaper-halo-wars-video-games.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.weaponEditHeaderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weaponEditActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.weaponEditH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.weaponEditTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponEditMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponEditBottomTwoInput {
+    display: flex;
+    justify-content: center;
+}

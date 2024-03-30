@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>
+        <%=armor.name%>
+    </title>
+</head>
+
+<div class="flex-container">
+
+    <body class="armorShowBody">
+
+        <form action="/home/armor">
+            <input class="headerButton button" type="submit" value="Back">
+        </form>
+
+        <div class="armorImageAndInfo">
+
+            <div class="armorShowLeftHalf">
+
+                <img class="armorShowImage" src="<%=armor.image%>">
+
+                <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
+
+                    <% if(armor.quanity>=1) { %>
+
+                        <form action='/home/armor/<%=armor._id%>/buy?_method=PUT' method='POST'>
+                            <input class="headerButton button" type='submit' value="Buy">
+                        </form>
+
+                        <% } else { %>
+                            <h3 style="color: red;">OUT OF STOCK</h3>
+                            <% } %>
+
+            </div>
+
+            <div class="armorShowRightHalf">
+
+                <div class="armorShowTopRightHalf">
+
+                    <h1 class="armorShowH1">
+                        <%=armor.name %>
+                    </h1>
+
+
+                    <h2 class="armorShowH2">Information:</h2> <br>
+
+                    <p class="armorShowP">
+                        <%=armor.description%>
+                    </p>
+
+                    <p class="armorShowP">
+                        $
+                        <%=armor.price%>
+                    </p>
+
+                    <p class="armorShowP">
+                        <%=armor.weight%> LBS
+                    </p>
+
+                    <p class="armorShowP">
+                        Quanity :
+                        <%=armor.quanity%>
+                    </p>
+
+                </div>
+
+                <div class="armorShowBottomRightHalf">
+
+                    <form action="/home/armor/<%=armor.id%>/edit">
+                        <input class="headerButton button" type="submit" value="Edit">
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <form action="/home">
+            <input class="headerButton button" type="submit" value="Home">
+        </form>
+
+    </body>
+
+
+</div>
+
+
+</html>

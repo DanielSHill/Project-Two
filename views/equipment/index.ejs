@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Equipment</title>
+</head>
+
+
+<nav class="equipmentIndexHeaderButtons">
+
+    <form action="/home">
+        <input class="headerButton button" type="submit" value="Back">
+    </form>
+
+    <form action="/home/equipment/new">
+        <input class="headerButton button" type="submit" value="Create New Equipment">
+    </form>
+
+    <form action="/home/equipment/seed">
+        <input class="headerButton button" type="submit" value="Refresh the product">
+    </form>
+
+    <form action="/home">
+        <input class="headerButton button" type="submit" value="Home">
+    </form>
+
+</nav>
+
+<body class="equipmentIndexBody">
+    <h1 class="equipmentIndexH1">Our Equipment</h1>
+
+
+    <ul class="equipmentUL">
+        <% equipments.forEach(equipment=> { %>
+
+            <li class="equipmentIndexList">
+                <div class="equipmentIndexNamePicture">
+                    <div class="equipmentIndexName">
+                        <%= equipment.name %> <br>
+                    </div>
+
+                    <a href="/home/equipment/<%=equipment._id%>" style="text-decoration: none; color: black;">
+                        <img class="equipmentIndexImage borderImage" src="<%= equipment.image %>"><br>
+
+                    </a>
+
+                </div>
+
+                <div class="equipmentIndexDeleteEditButtons">
+                    <form action="/home/equipment/<%=equipment.id%>?_method=DELETE" method="POST">
+                        <input class="indexDeleteButton deleteButton" type="submit" value="DELETE">
+                    </form>
+
+                    <form action="/home/equipment/<%=equipment.id%>/edit">
+                        <input class="indexEditButton editButton" type="submit" value="EDIT">
+                    </form>
+
+                </div>
+
+            </li>
+
+            <% }) %>
+
+    </ul>
+
+</body>
+
+
+
+</html>

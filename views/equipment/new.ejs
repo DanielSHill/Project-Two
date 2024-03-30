@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Create New Equipment</title>
+</head>
+
+<nav class="equipmentNewHeaderButtons">
+
+    <form action="/home/equipment">
+        <input class="headerButton button" type="submit" value="Back">
+    </form>
+
+    <form action="/home">
+        <input class="headerButton button" type="submit" value="Home">
+    </form>
+
+</nav>
+
+<body class="equipmentNewBody">
+
+    <h1 class="equipmentNewH1">Create Your Equipment</h1>
+
+    <form action="/home/equipment" method="post">
+
+
+        <div class="equipmentNewTopTwoInput">
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox input" type="text" name="name" autocomplete="off" placeholder="Equipment Name" required>
+            </div>
+
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox input" type="text" name="description" placeholder="Description" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="equipmentNewMiddleTwoInput">
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox input" type="text" name="image" autocomplete="off" placeholder="Image">
+            </div>
+
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox input" type="text" name="quanity" autocomplete="off" placeholder="Quanity" required>
+            </div>
+        </div>
+
+        <div class="equipmentNewBottomInput">
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox input" type="text" name="price" placeholder="Price" autocomplete="off" required>
+            </div>
+        </div>
+
+        <br>
+
+
+        <input class="headerButton button" type="submit" value="Create">
+
+
+    </form>
+
+
+</body>
+
+</html>

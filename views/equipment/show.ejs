@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>
+        <%=equipment.name%>
+    </title>
+</head>
+
+<div class="flex-container">
+
+    <form action="/home/equipment">
+        <input class="headerButton button" type="submit" value="Back">
+    </form>
+
+
+    <body class="equipmentShowBody">
+
+        <div class="equipmentShowContainer">
+
+
+            <div class="equipmentShowLeftHalf">
+
+                <img class="equipmentShowImage" src="<%=equipment.image%>" style="max-height: 400px; max-width: 400px;">
+
+
+                <form action="/home/equipment/<%=equipment.id%>/edit">
+                    <input class="headerButton button" type="submit" value="Edit">
+                </form>
+
+            </div>
+
+
+            <div class="equipmentShowRightHalf">
+
+                <div class="equipmentShowRightHalfTopHalf">
+
+                    <h1 class="equipmentShowH1">
+                        <%=equipment.name %>
+                    </h1>
+                    <h2 class="equipmentShowH2">Information:</h2> <br>
+
+                    <p>
+                        <%=equipment.description%>
+                    </p>
+
+                    <p>
+                        $
+                        <%=equipment.price%>
+                    </p>
+
+                </div>
+
+                <div class="equipmentShowRightHalfBottomHalf">
+
+                    <% if(equipment.quanity>=1) { %>
+
+                        <p>
+                            Quanity :
+                            <%=equipment.quanity%>
+                        </p>
+
+                        <form action='/home/equipment/<%=equipment._id%>/buy?_method=PUT' method='POST'>
+                            <input class="headerButton button" type='submit' value="Buy">
+                        </form>
+
+                        <% } else { %>
+                            <h3 style="color: red;">OUT OF STOCK</h3>
+                            <% } %>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </body>
+
+    <form action="/home">
+        <input class="headerButton button" type="submit" value="Home">
+    </form>
+
+</div>
+
+
+
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Create New Weapon</title>
+</head>
+
+<nav class="weaponNewHeaderButtons">
+
+    <form action="/home/weapons">
+        <input class="headerButton button" type="submit" value="Back">
+    </form>
+
+    <form action="/home">
+        <input class="headerButton button" type="submit" value="Home">
+    </form>
+
+</nav>
+
+<body class="weaponNewBody">
+
+    <h1 class="weaponNewH1">Create Your Weapon</h1>
+
+    <form action="/home/weapons" method="post">
+
+
+        <div class="weaponNewTopTwoInput">
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox input" type="text" name="name" autocomplete="off" placeholder="Weapon Name" required>
+            </div>
+
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox input" type="text" name="description" placeholder="Description" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="weaponNewMiddleTwoInput">
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox input" type="text" name="weight" placeholder="Weight" autocomplete="off" required>
+            </div>
+
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox input" type="text" name="price" placeholder="Price" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="weaponNewBottomTwoInput">
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox input" type="text" name="image" autocomplete="off" placeholder="Image">
+            </div>
+
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox input" type="text" name="quanity" autocomplete="off" placeholder="Quanity" required>
+            </div>
+        </div>
+
+        <br>
+
+
+        <input class="headerButton button" type="submit" value="Create">
+
+
+    </form>
+
+
+</body>
+
+</html>

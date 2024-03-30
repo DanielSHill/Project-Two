@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Armors</title>
+</head>
+
+
+<nav class="armorIndexHeaderButtons">
+
+
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexBack">
+            <form action="/home">
+                <input class="headerButton button" type="submit" value="Back">
+            </form>
+        </div>
+    </div>
+
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexNew">
+            <form action="/home/armor/new">
+                <input class="headerButton button" type="submit" value="Create New Armor">
+            </form>
+        </div>
+    </div>
+
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexRefresh">
+            <form action="/home/armor/seed">
+                <input class="headerButton button" type="submit" value="Refresh the product">
+            </form>
+        </div>
+    </div>
+
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexHome">
+            <form action="/home">
+                <input class="headerButton button" type="submit" value="Home">
+            </form>
+        </div>
+    </div>
+
+</nav>
+
+<body class="armorsIndexBody">
+    <h1 class="armorIndexH1">Our Armor</h1>
+
+
+    <div armorsIndexBodyDiv>
+        <ul class="armorUL">
+            <% armors.forEach(armor=> { %>
+
+            <li class="armorLI" style="list-style-type: none;">
+
+                <div class="armorIndexName">
+                    <%= armor.name %> Armor<br>
+                </div>
+                <a href="/home/armor/<%=armor._id%>" style="text-decoration: none; color: black;">
+                    <img class="armorIndexImage image" src="<%= armor.image %>">
+
+                </a>
+
+                <div class="armorIndexDeleteEdit">
+                    <div class="armorIndexDeleteButton">
+                        <form action="/home/armor/<%=armor.id%>?_method=DELETE" method="POST">
+                            <input class="indexDeleteButton deleteButton" type="submit" value="DELETE">
+                        </form>
+                    </div>
+
+                    <div clas="armorIndexEditButton">
+                        <form action="/home/armor/<%=armor.id%>/edit">
+                            <input class="indexEditButton editButton" type="submit" value="EDIT">
+                        </form>
+                    </div>
+                </div>
+
+            </li>
+
+            <% }) %>
+
+        </ul>
+    </div>
+</body>
+
+
+
+</html>
